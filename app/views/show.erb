@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>This is one single recipe!</title>
+    </head>
+
+    <body>
+        <h1><%= @recipe.name %></h1>
+        <div><%= @recipe.ingredients %></div>
+        <div><%= @recipe.cook_time %></div>
+
+        <form method="POST" action="/recipes/<%= @recipe.id %>">
+            <input id="hidden" type="hidden" name="_method" value="DELETE">
+            <input type="submit" value="delete">
+        </form>
+
+    </body>
+</html>
