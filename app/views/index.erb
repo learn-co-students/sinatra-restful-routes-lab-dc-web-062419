@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>All recipes, forever!</title>
+    </head>
+
+    <body>
+        <h1>We have so many recipes, wow </h1>
+        <ul>
+            <% @recipes.each do |rec| %>
+                <li><a href=<%="/recipes/#{rec.id}"%>> <%= rec.name %></a></li>
+            <% end %>
+        </ul>
+
+    </body>
+</html>
