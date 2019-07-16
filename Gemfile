@@ -10,6 +10,7 @@ gem 'rake'
 gem 'require_all'
 gem 'shotgun'
 gem 'json'
+gem 'byebug'
 
 group :test do
   gem 'rspec'
